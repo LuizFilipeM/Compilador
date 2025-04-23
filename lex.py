@@ -33,10 +33,10 @@ TOKEN_REGEX = [
     ('SEMI', r';'),
     ('ASSIGN', r'='),
     ('WHITESPACE',r'[ \t\n]+'),
+    ('POINT', r'.'),
 
     #Operadores relacioanais
     ('EQ', r'=='),
-    ('LE', r'=='),
     ('LE', r'<='),
     ('GE', r'>='),
     ('LT', r'<'),
