@@ -1,11 +1,17 @@
 # A Simple Compiler
 
 This is a prototype of a simple compiler. The objective of this project is practice
-the concepts of compilers.
+the concepts of compilers. This project are made with Python and a library of regular expressions.
+
+### Arquives
+list_tok -> contains the output from lexical analyzer.
+teste.py -> contains a source code to tests.
+lex.py   -> contains the lexical analyzer.
+
 
 ## Specifications
 
-### Lexical Analizer
+### Lexical Analyzer
 The first step of the compiler. Here we need to recognize the tokens and guarantee that each word of 
 source code are defined at the aim language. In this project, when an error are find, the lexical analizer don't 
 crash, it's continue with the intention to assess whether there are more erros.
