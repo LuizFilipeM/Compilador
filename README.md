@@ -6,9 +6,9 @@ the concepts of compilers.
 This project are made with Python and a library for regular expressions.
 
 ### Arquives
-list_tok -> contains the output from lexical analyzer.
+list_tok.txt  -> contains the output from lexical analyzer.
 
-teste.py -> contains a source code to tests.
+teste.txt     -> contains a source code to tests.
 
 lex.py   -> contains the lexical analyzer.
 
