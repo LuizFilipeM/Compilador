@@ -5,16 +5,17 @@ import sys
 KEYWORDS = {
     'if': 'IF',
     'while': 'WHILE',
-    'var': 'VAR',
+    'for': 'FOR',
     'main': 'MAIN',
     'return': 'RETURN',
     'int': 'INT',
     'float': 'FLOAT',
     'char': 'CHAR',
-    
+    'print': 'PRINT',
+    'read': 'READ'
 }
 
-# Definição dos tokens com expressões regulares
+# Definição dos tokens
 TOKEN_REGEX = [
     ('NUM', r'\d+'),
     ('ID', r'[a-zA-Z_][a-zA-Z0-9_]*'),
@@ -33,7 +34,7 @@ TOKEN_REGEX = [
     ('SEMI', r';'),
     ('ASSIGN', r'='),
     ('WHITESPACE',r'[ \t\n]+'),
-    ('POINT', r'.'),
+    ('POINT', r'\.'),
 
     #Operadores relacioanais
     ('EQ', r'=='),
@@ -75,7 +76,6 @@ def lexer(code):
             continue
 
     return tokens
-
 
 def main():
     with open(sys.argv[1], 'r', encoding='utf-8') as f:
