@@ -5,7 +5,9 @@ the concepts of compilers. This project are made with Python and a library of re
 
 ### Arquives
 list_tok -> contains the output from lexical analyzer.
+
 teste.py -> contains a source code to tests.
+
 lex.py   -> contains the lexical analyzer.
 
 
