@@ -1,7 +1,7 @@
 import re
 import sys
 
-# Palavras-chave da linguagem
+# Palavras-chave
 KEYWORDS = {
     'if': 'IF',
     'while': 'WHILE',
@@ -19,6 +19,7 @@ KEYWORDS = {
 TOKEN_REGEX = [
     ('NUM', r'\d+'),
     ('ID', r'[a-zA-Z_][a-zA-Z0-9_]*'),
+    ('LITERAL', r'\"[a-zA-Z_][a-zA-Z0-9_]*\"'),
 
     #Operadores aritméticos
     ('PLUS', r'\+'),
