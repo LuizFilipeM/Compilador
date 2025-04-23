@@ -1,7 +1,9 @@
 # A Simple Compiler
 
 This is a prototype of a simple compiler. The objective of this project is practice
-the concepts of compilers. This project are made with Python and a library of regular expressions.
+the concepts of compilers. 
+
+This project are made with Python and a library for regular expressions.
 
 ### Arquives
 list_tok -> contains the output from lexical analyzer.
