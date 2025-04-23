@@ -62,11 +62,12 @@ def lexer(code):
         for token_name, pattern in token_re:
             match = pattern.match(code, pos)
             if match:
+                linha, coluna = get_line_col(code, pos)
                 lexeme = match.group()
                 if token_name == 'ID' and lexeme in KEYWORDS:
-                    tokens.append((KEYWORDS[lexeme], lexeme))
+                    tokens.append((KEYWORDS[lexeme], lexeme, linha, coluna))
                 elif token_name != 'WHITESPACE':
-                    tokens.append((token_name, lexeme))
+                    tokens.append((token_name, lexeme, linha, coluna))
                 pos = match.end()
                 break
         if not match:
